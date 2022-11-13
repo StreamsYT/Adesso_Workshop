@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="WorkshopTestIntApp_IntTest\**" />
+    <Compile Remove="WorkshopTestIntApp_UnitTest\**" />
+    <EmbeddedResource Remove="WorkshopTestIntApp_IntTest\**" />
+    <EmbeddedResource Remove="WorkshopTestIntApp_UnitTest\**" />
+    <None Remove="WorkshopTestIntApp_IntTest\**" />
+    <None Remove="WorkshopTestIntApp_UnitTest\**" />
+  </ItemGroup>
+</Project>
